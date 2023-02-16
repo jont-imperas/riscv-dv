@@ -14,7 +14,7 @@ randomization and coverage collection. It currently supports the following featu
 - Multi-hart support
 - Functional coverage framework (reports GUI as well as text, currently
   supports RV32IMFDC extensions)
-- Supported ISS : Spike, OVPsim
+- Supported ISS : Spike, riscvOVPsimplus
 
 ## Supported tests
 

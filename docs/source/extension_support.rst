@@ -17,12 +17,12 @@ Setup RISCV-GCC compiler toolchain and ISS simulator
 3.  Update environment variable RISCV_OBJCOPY to RISC-V objcopy executable
     executable. (example: <install_dir>/bin/riscv64-unknown-elf-objcopy)
 4.  Update environment variable SPIKE_PATH to the directory of the spike binary
-5.  Update `riscv-ovpsim`_ to Nov 26, 2019 or later version
+5.  Update `riscv-ovpsimplus`_ to Nov 26, 2019 or later version
 
 .. _steps: https://github.com/riscv/riscv-bitmanip/tree/master/tools#building-tools-with-draft-b-extension-instructions-support
 .. _riscv-gcc: https://github.com/riscv/riscv-bitmanip
 .. _build_file: https://github.com/riscv/riscv-bitmanip/blob/master/tools/riscv-isa-sim-build.sh
-.. _riscv-ovpsim: https://github.com/riscv/riscv-ovpsim
+.. _riscv-ovpsimplus: https://www.ovpworld.org/library/wikka.php?wakka=riscvOVPsimPlus
 
 Sample .bashrc setup::
 
@@ -35,7 +35,7 @@ Run bitmanip simulation
 ------------------------
 
 Bit manipulation tests are added in target "rv32imcb" or "rv64imcb". Here is the
-example to run bitmanip test with both ISS (spike and ovpsim). The instruction
+example to run bitmanip test with both ISS (spike and riscvovpsimplus). The instruction
 trace from these ISS will be cross compared::
 
     run --target rv32imcb --test riscv_b_ext_test --iss spike,ovpsim
@@ -73,7 +73,7 @@ It includes below major categories:
 
 - Hazard conditions
 
-Before this `issue`_ is resolved, functional coverage can only be run with OVPsim::
+Before this `issue`_ is resolved, functional coverage can only be run with riscvOVPsimPlus::
 
   cov --dir out/ovpsim_sim --iss ovpsim --target rv32imc
 
