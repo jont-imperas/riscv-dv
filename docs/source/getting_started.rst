@@ -67,9 +67,9 @@ one of below to run ISS simulation.
     - Follow the instructions to build spike
     - Build spike with "--enable-commitlog"
     - Set environment variable SPIKE_PATH to the directory of the spike binary
-2.  - `riscv-ovpsim`_ setup
-    - Download the riscv-ovpsim binary
-    - Set environment variable OVPSIM_PATH to the directory of the ovpsim binary
+2.  - `riscv-ovpsimplus`_ setup
+    - Download the riscv-ovpsimplus binary
+    - Set environment variable OVPSIM_PATH to the directory of the riscv-ovpsimplus binary
 3.  - `whisper`_ (swerv-ISS) setup
     - Follow the instruction to install the ISS, and set WHISPER_ISS to the whisper binary
 4.  - `sail-riscv`_ setup
@@ -77,7 +77,7 @@ one of below to run ISS simulation.
     - Set environment variable SAIL_RISCV to the path of sail-riscv binary
 
 .. _spike: https://github.com/riscv/riscv-isa-sim
-.. _riscv-ovpsim: https://github.com/riscv/riscv-ovpsim
+.. _riscv-ovpsimplus: https://www.ovpworld.org/library/wikka.php?wakka=riscvOVPsimPlus
 .. _whisper: https://github.com/westerndigitalcorporation/swerv-ISS
 .. _sail-riscv: https://github.com/rems-project/sail-riscv
 .. _sail-riscv steps: https://github.com/rems-project/sail-riscv/blob/master/README.md
@@ -86,7 +86,7 @@ Sample .bashrc setup::
 
     export SPIKE_PATH=$RISCV_TOOLCHAIN/bin
     export SAIL_RISCV="xx/xxx/ocaml_emulator"
-    export OVPSIM_PATH=/xx/xxx/riscv-ovpsim/bin/Linux64
+    export OVPSIM_PATH=/xx/xxx/riscv-ovpsim-plus/bin/Linux64
     export WHISPER_ISS="xx/xxx/swerv-ISS/build-Linux/whisper"
 
 Running the generator
@@ -154,7 +154,7 @@ You can use -iss to run with different ISS::
     # Run ISS with spike
     run --test riscv_arithmetic_basic_test --iss spike
 
-    # Run ISS with riscv-ovpsim
+    # Run ISS with riscv-ovpsimplus
     run --test riscv_rand_instr_test --iss ovpsim
 
     # Run ISS with whisper (swerv-ISS)
@@ -170,7 +170,7 @@ line like this::
     # Run a full regression with RV32IMC
     run --isa rv32imc --mabi ilp32
 
-We have added a flow to run ISS simulation with both spike and riscv-ovpsim,
+We have added a flow to run ISS simulation with both spike and riscv-ovpsimplus,
 the instruction trace from these runs will be cross compared. This could greatly
 speed up your development of new test without the need to simulate against a
 real RISC-V processor::

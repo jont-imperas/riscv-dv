@@ -374,7 +374,7 @@ class riscv_cov_instr:
 
     def check_hazard_condition(self, pre_instr):
         '''TODO: There are cases where instruction actually has destination but
-        ovpsim doesn't log it because of no change in its value. Hence,
+        riscvovpsimplus doesn't log it because of no change in its value. Hence,
         the result of the check_hazard_condition won't be accurate. Need to
         explicitly extract the destination register from the operands '''
         if pre_instr.has_rd:

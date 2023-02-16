@@ -18,7 +18,7 @@ processor verification. It currently supports the following features:
 - Instruction generation coverage model
 - Handshake communication with testbench
 - Support handcoded assembly test
-- Co-simulation with multiple ISS : spike, riscv-ovpsim, whisper, sail-riscv
+- Co-simulation with multiple ISS : spike, riscv-ovpsimplus, whisper, sail-riscv
 
 ## Getting Started
 

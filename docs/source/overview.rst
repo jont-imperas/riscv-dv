@@ -18,7 +18,7 @@ processor verification. It currently supports the following features:
 - Debug mode support, with fully randomized debug ROM
 - Instruction generation coverage model
 - Communication of information to any integrated SV testbench
-- Co-simulation with multiple ISS : spike, riscv-ovpsim
+- Co-simulation with multiple ISS : spike, riscv-ovpsimplus
 
 A CSR test generation script written in Python is also provided, to generate a
 directed test suite that stresses all CSR instructions on all of the CSRs that
