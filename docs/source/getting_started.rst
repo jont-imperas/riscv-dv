@@ -69,7 +69,8 @@ one of below to run ISS simulation.
     - Set environment variable SPIKE_PATH to the directory of the spike binary
 2.  - `riscv-ovpsimplus`_ setup
     - Download the riscv-ovpsimplus binary
-    - Set environment variable OVPSIM_PATH to the directory of the riscv-ovpsimplus binary
+    - Set environment variable OVPSIM_PATH to the directory of the riscvOVPsimPlus.exe binary
+    - This is usually something like <Install_directory>/imperas-riscv-tests/riscv-ovpsim-plus/bin/<OS>/riscvOVPsimPlus.exe
 3.  - `whisper`_ (swerv-ISS) setup
     - Follow the instruction to install the ISS, and set WHISPER_ISS to the whisper binary
 4.  - `sail-riscv`_ setup
