@@ -19,5 +19,5 @@
 --override riscvOVPsim/cpu/wfi_is_nop=T
 --exitonsymbol _exit
 #
---output imperas.log
+--output riscvovpsimplus.log
 --override riscvOVPsim/cpu/unaligned=F
