@@ -22,7 +22,7 @@ Setup RISCV-GCC compiler toolchain and ISS simulator
 .. _steps: https://github.com/riscv/riscv-bitmanip/tree/master/tools#building-tools-with-draft-b-extension-instructions-support
 .. _riscv-gcc: https://github.com/riscv/riscv-bitmanip
 .. _build_file: https://github.com/riscv/riscv-bitmanip/blob/master/tools/riscv-isa-sim-build.sh
-.. _riscv-ovpsimplus: https://www.ovpworld.org/library/wikka.php?wakka=riscvOVPsimPlus
+.. _riscv-ovpsimplus:https://www.ovpworld.org/riscvOVPsimPlus/
 
 Sample .bashrc setup::
 

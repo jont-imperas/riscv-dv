@@ -78,7 +78,7 @@ one of below to run ISS simulation.
     - Set environment variable SAIL_RISCV to the path of sail-riscv binary
 
 .. _spike: https://github.com/riscv/riscv-isa-sim
-.. _riscv-ovpsimplus: https://www.ovpworld.org/library/wikka.php?wakka=riscvOVPsimPlus
+.. _riscv-ovpsimplus: https://www.ovpworld.org/riscvOVPsimPlus/
 .. _whisper: https://github.com/westerndigitalcorporation/swerv-ISS
 .. _sail-riscv: https://github.com/rems-project/sail-riscv
 .. _sail-riscv steps: https://github.com/rems-project/sail-riscv/blob/master/README.md
